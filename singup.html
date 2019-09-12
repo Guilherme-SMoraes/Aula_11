@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscreva-se</title>
-    <link rel="stylesheet" href="Site.css">
+    <link rel="stylesheet" type="text/css" href="Content/Site.css">
 </head>
 
 <body>
@@ -15,63 +15,86 @@
         </nav>
     </header>
     <main>
-        <fieldset>
-            <legend><h1>Inscrição</h1></legend>
-            <form method="POST" enctype="application/x-www-form-urlencoded">
-                
-                <div class="form-group">
-                    <label for="NomeCompleto">Nome Completo</label>
-                    <input type="text" name="NomeCompleto" id="NomeCompleto">
-                    <label for="Genero">Gênero</label>
-                    <select name="Genero" id="Genero">
-                        <option value="">-- Selectione uma opção --</option>
-                        <option value="0">Masculino</option>
-                        <option value="1">Feminino</option>
-                        <option value="3">Não Binário</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="DataNasc">Data de Nascimento</label>
-                    <input type="date" name="DataNasc" id="DataNasc">
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div class="form-group">
-                    <div>
-                        <label for="Celular">Celular</label>
-                        <input type="tel" name="Celular" id="Celular" pattern="\([0-9]{2,3}\)[0-9]{4,5}-[0-9]{4,5}"
-                            placeholder="(__)_____-_____">
-                    </div>
-                    <div class="radio-group">
-                        O que você é? <br>
-                        <input type="radio" value="Aluno" name="Classificacao">Aluno<br>
-                        <input type="radio" value="Funcionario" name="Classificacao">Funcionario<br>
-                        <input type="radio" value="Visitante" name="Classificacao">Visitante<br>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="Senha">Senha</label>
-                    <input type="password" name="Senha" id="Senha">
-                    <label for="ConfirmaSenha">Confirme a Senha</label>
-                    <input type="password" name="ConfirmaSenha" id="ConfirmaSenha">
-                </div>
-                <div class="form-group">
-                    <div class="check-group">
-                        Quais são seus interesses? <br>
-                        <input type="checkbox" name="Disciplinas" value="ADS">Análise e desenvolvimento de sistemas <br>
-                        <input type="checkbox" name="Disciplinas" value="Letras">Letras <br>
-                        <input type="checkbox" name="Disciplinas" value="Gestão">Gestão <br>
-                    </div>
-                    <label for="corFavorita">Sua Cor Favorita</label>
-                    <input type="color" name="corFavorita" id="corFavorita">
-                </div>
-                <button type="submit">Enviar</button>
-                <button type="reset">Limpar</button>
-            </form>
-        </fieldset>
+        <div class="panel">
+            <div class="panel-header">
+                <h1 class="center">Cadastro</h1>
+            </div>
+            <div class="panel-body">
+                <fieldset>
+                    <legend>
+                        <h3>Dados Pessoais</h3>
+                    </legend>
+                    <form method="POST" enctype="application/x-www-form-urlencoded">
+
+                        <div class="form-group">
+                            <div class="label-input-group">
+                                <label for="NomeCompleto">Nome Completo</label>
+                                <input type="text" name="NomeCompleto" id="NomeCompleto">
+                            </div>
+                            <div class="label-input-group">
+                                <label for="Genero">Gênero</label>
+                                <select name="Genero" id="Genero">
+                                    <option value="">-- Selectione uma opção --</option>
+                                    <option value="0">Masculino</option>
+                                    <option value="1">Feminino</option>
+                                    <option value="3">Não Binário</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="label-input-group">
+                                <label for="DataNasc">Data de Nascimento</label>
+                                <input type="date" name="DataNasc" id="DataNasc">
+                            </div>
+                            <div class="label-input-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="label-input-group">
+                                <label for="Celular">Celular</label>
+                                <input type="tel" name="Celular" id="Celular"
+                                    pattern="\([0-9]{2,3}\)[0-9]{4,5}-[0-9]{4,5}" placeholder="(__)_____-_____">
+                            </div>
+                            <div class="radio-group">
+                                O que você é? <br>
+                                <input type="radio" value="Aluno" name="Classificacao">Aluno<br>
+                                <input type="radio" value="Funcionario" name="Classificacao">Funcionario<br>
+                                <input type="radio" value="Visitante" name="Classificacao">Visitante<br>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="label-input-group">
+                                <label for="Senha">Senha</label>
+                                <input type="password" name="Senha" id="Senha">
+                            </div>
+                            <div class="label-input-group">
+                                <label for="ConfirmaSenha">Confirme a Senha</label>
+                                <input type="password" name="ConfirmaSenha" id="ConfirmaSenha">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="check-group">
+                                Quais são seus interesses? <br>
+                                <input type="checkbox" name="Disciplinas" value="ADS">Análise e desenvolvimento de
+                                sistemas
+                                <br>
+                                <input type="checkbox" name="Disciplinas" value="Letras">Letras <br>
+                                <input type="checkbox" name="Disciplinas" value="Gestão">Gestão <br>
+                            </div>
+                            <label for="corFavorita">Sua Cor Favorita</label>
+                            <input type="color" name="corFavorita" id="corFavorita">
+                        </div>
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                        <button type="reset" class="btn btn-warning">Limpar</button>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
     </main>
     <footer>
-        <div class="painel">
+        <div class="center">
             <strong>Copyright© Guilherme Moraes 2019</strong>
         </div>
     </footer>
