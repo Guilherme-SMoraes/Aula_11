@@ -8,8 +8,25 @@ footer{
     width: 100%;
     height: 40px;
 }
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
 p{
     font-size: 20px;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+a.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .sidebar{
@@ -62,17 +79,17 @@ form label{
     margin-right: 5px;
 }
 form input[type="text"],form input[type="date"],form input[type="email"]
-,form input[type="tel"],form input[type="password"],form select{
+,form input[type="tel"],form input[type="password"],form select,form textarea{
     margin-right: 20px;
     border:1px solid black;
     padding:8px 8px;
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+    outline: none;
 }
 footer{
     bottom: 0;
-    position: absolute;
 }
 
 /* Bordas */
